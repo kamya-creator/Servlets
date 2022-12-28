@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<!-- Servlet Logic name = name under servlet-name tag -->
+		<servlet-name>servlet2</servlet-name>
+		<servlet-class>com.cg.servlets.Servlet2</servlet-class>
+		<init-param>
+			<param-name>Db</param-name>
+			<param-value>MySQL</param-value>
+		</init-param>
+		
+		<init-param>
+			<param-name>Vendor</param-name>
+			<param-value>Apache</param-value>
+		</init-param>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+</web-app>
