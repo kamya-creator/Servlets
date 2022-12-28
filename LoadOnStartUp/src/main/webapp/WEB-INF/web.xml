@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app >
+  <display-name>JavaServlets</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+	<servlet-name>HelloWorld123</servlet-name>
+	<servlet-class>com.cg.servlets.HelloWorld</servlet-class>
+	
+	<!-- Load on startup se servlet deployement ke waqt load and initalized ho jata h -->
+	<load-on-startup>1</load-on-startup>
+	<!-- Servlet Initialization ke waqt parameters init-param tag se define hote h -->
+	<init-param>
+		<param-name>count</param-name>
+		<param-value>2244</param-value>
+	</init-param>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>HelloWorld123</servlet-name>
+	<url-pattern>/HelloWorld</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>ServletLifeCycle</servlet-name>
+	<servlet-class>com.cg.servlets.ServletLifeCycle</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>ServletLifeCycle</servlet-name>
+	<url-pattern>/ServletLifeCycle</url-pattern>
+</servlet-mapping>
+</web-app>
+
+
