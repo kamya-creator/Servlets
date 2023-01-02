@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.cg.servlets.LoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.cg.servlets.LogoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>LinkServlet</servlet-name>
+		<servlet-class>com.cg.servlets.LinkServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LinkServlet</servlet-name>
+		<url-pattern>/LinkServlet</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
