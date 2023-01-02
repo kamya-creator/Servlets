@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	
+	<welcome-file-list>
+		<welcome-file>Register.html</welcome-file>
+	</welcome-file-list>
+	<filter>
+		<filter-name>ValidationFilter</filter-name>
+		<filter-class>com.cg.filters.ValidationFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>ValidationFilter</filter-name>
+		<url-pattern>/Registerartion</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>Registerartion</servlet-name>
+		<servlet-class>com.cg.servlets.Registerartion</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Registerartion</servlet-name>
+		<url-pattern>/Registerartion</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

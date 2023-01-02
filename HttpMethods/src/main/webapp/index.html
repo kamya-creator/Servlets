@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Http Methods Example</title>
+</head>
+<body>
+	<div>
+		<form action = 'HttpMethodsExample' method ='get'>
+			<button type ='submit'>Check For Get Response</button>
+		</form>
+		
+		<br>
+		<br>
+		
+		<form action = 'HttpMethodsExample' method ='post'>
+			<button type ='submit'>Check For Post Response</button>
+		</form>
+		
+		<br>
+		<br>
+		
+		<!-- We Cannot use PUT method in Form Tag method attribute
+			Only GET and POST methods are allowed if we use put method
+			browser will treat it as GET method by default
+		 -->
+		<form action = 'HttpMethodsExample' method ='put'>
+			<button type ='submit'>Check For Put Response</button>
+			<h4>We cannot use PUT method in HTTP Method---Browser will treat it as GET method by DEFAULT</h4>
+		</form>
+		
+		<br>
+		<br>
+		
+		<form action = 'HttpMethodsExample' method ='delete'>
+			<button type ='submit'>Check For Delete Response</button>
+			<h4>We cannot use DELETE method in HTTP Method---Browser will treat it as GET method by DEFAULT</h4>
+		</form>
+		
+		<br>
+		<br>
+	</div>
+</body>
+</html>

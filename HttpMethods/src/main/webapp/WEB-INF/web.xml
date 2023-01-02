@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<servlet>
+		<servlet-name>HttpMethodsExample</servlet-name>
+		<servlet-class>com.cg.servlets.HttpMethodsExample</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>HttpMethodsExample</servlet-name>
+		<url-pattern>/HttpMethodsExample</url-pattern>
+	</servlet-mapping>
+</web-app>
